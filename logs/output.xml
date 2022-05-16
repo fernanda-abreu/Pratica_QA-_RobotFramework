@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.9.4 on win32)" generated="20220516 20:10:56.284" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.9.4 on win32)" generated="20220516 20:18:29.783" rpa="false" schemaversion="3">
 <suite id="s1" name="Busca" source="C:\rw5\parodifood\tests\busca.robot">
 <test id="s1-t1" name="Deve buscar um único restaurante" line="5">
 <kw name="New Browser" library="Browser">
@@ -8,25 +8,25 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20220516 20:10:57.639" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\rw5\\parodifood\\logs\\browser\\traces\\8968d3eb-5610-4183-a8f6-540b76c56469"}</msg>
-<msg timestamp="20220516 20:10:59.105" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\rw5\\parodifood\\logs\\browser\\traces\\8968d3eb-5610-4183-a8f6-540b76c56469"}</msg>
-<status status="PASS" starttime="20220516 20:10:57.639" endtime="20220516 20:10:59.106"/>
+<msg timestamp="20220516 20:18:31.262" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\rw5\\parodifood\\logs\\browser\\traces\\7f11d0b5-958a-4044-8bff-de959a2770d2"}</msg>
+<msg timestamp="20220516 20:18:32.586" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\rw5\\parodifood\\logs\\browser\\traces\\7f11d0b5-958a-4044-8bff-de959a2770d2"}</msg>
+<status status="PASS" starttime="20220516 20:18:31.261" endtime="20220516 20:18:32.587"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>http://parodifood.qaninja.academy/</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20220516 20:11:05.450" level="INFO">Successfully initialized new page object and opened url: http://parodifood.qaninja.academy/</msg>
-<msg timestamp="20220516 20:11:05.451" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20220516 20:10:59.112" endtime="20220516 20:11:05.452"/>
+<msg timestamp="20220516 20:18:37.232" level="INFO">Successfully initialized new page object and opened url: http://parodifood.qaninja.academy/</msg>
+<msg timestamp="20220516 20:18:37.233" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220516 20:18:32.589" endtime="20220516 20:18:37.233"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>text=Estou com fome!</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220516 20:11:05.454" endtime="20220516 20:11:05.710"/>
+<status status="PASS" starttime="20220516 20:18:37.234" endtime="20220516 20:18:37.511"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>css=h1 strong</arg>
@@ -36,20 +36,20 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220516 20:11:05.711" endtime="20220516 20:11:05.757"/>
+<status status="PASS" starttime="20220516 20:18:37.512" endtime="20220516 20:18:37.562"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220516 20:11:10.765" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220516 20:11:05.758" endtime="20220516 20:11:10.765"/>
+<msg timestamp="20220516 20:18:42.572" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220516 20:18:37.562" endtime="20220516 20:18:42.572"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>css=.search-link</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220516 20:11:10.765" endtime="20220516 20:11:10.809"/>
+<status status="PASS" starttime="20220516 20:18:42.573" endtime="20220516 20:18:42.624"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>css=input[formcontrolname="searchControl"]</arg>
@@ -57,18 +57,18 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220516 20:11:10.811" level="INFO">Fills the text 'Debuger' in the given field.</msg>
-<status status="PASS" starttime="20220516 20:11:10.810" endtime="20220516 20:11:10.860"/>
+<msg timestamp="20220516 20:18:42.625" level="INFO">Fills the text 'Debuger' in the given field.</msg>
+<status status="PASS" starttime="20220516 20:18:42.625" endtime="20220516 20:18:42.679"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
-<arg>css=div[class="place-info-box"][style="opacity: 1;"]</arg>
+<arg>(//div[@class='place-info-box'])[1]</arg>
 <arg>visible</arg>
 <arg>10</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220516 20:11:11.848" level="INFO">Waited for Element with selector css=div[class="place-info-box"][style="opacity: 1;"] at state visible</msg>
-<status status="PASS" starttime="20220516 20:11:10.861" endtime="20220516 20:11:11.848"/>
+<msg timestamp="20220516 20:18:42.696" level="INFO">Waited for Element with selector (//div[@class='place-info-box'])[1] at state visible</msg>
+<status status="PASS" starttime="20220516 20:18:42.680" endtime="20220516 20:18:42.697"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>css=.place-info-box</arg>
@@ -78,32 +78,218 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220516 20:11:11.849" endtime="20220516 20:11:11.869"/>
+<status status="PASS" starttime="20220516 20:18:42.697" endtime="20220516 20:18:43.359"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220516 20:11:16.869" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220516 20:11:11.869" endtime="20220516 20:11:16.870"/>
+<msg timestamp="20220516 20:18:48.375" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220516 20:18:43.360" endtime="20220516 20:18:48.375"/>
 </kw>
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20220516 20:11:17.083" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220516 20:11:16.872" endtime="20220516 20:11:17.084"/>
+<msg timestamp="20220516 20:18:48.571" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220516 20:18:48.376" endtime="20220516 20:18:48.571"/>
 </kw>
-<status status="PASS" starttime="20220516 20:10:57.634" endtime="20220516 20:11:17.084"/>
+<status status="PASS" starttime="20220516 20:18:31.258" endtime="20220516 20:18:48.571"/>
 </test>
-<status status="PASS" starttime="20220516 20:10:56.286" endtime="20220516 20:11:17.211"/>
+<test id="s1-t2" name="Deve buscar por categoria" line="33">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20220516 20:18:48.715" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\rw5\\parodifood\\logs\\browser\\traces\\7d652920-46fc-4d02-bc2c-be79282a2e05"}</msg>
+<msg timestamp="20220516 20:18:49.892" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\rw5\\parodifood\\logs\\browser\\traces\\7d652920-46fc-4d02-bc2c-be79282a2e05"}</msg>
+<status status="PASS" starttime="20220516 20:18:48.712" endtime="20220516 20:18:49.892"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>http://parodifood.qaninja.academy/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220516 20:18:56.145" level="INFO">Successfully initialized new page object and opened url: http://parodifood.qaninja.academy/</msg>
+<msg timestamp="20220516 20:18:56.145" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220516 20:18:49.901" endtime="20220516 20:18:56.146"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>text=Estou com fome!</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220516 20:18:56.147" endtime="20220516 20:18:56.379"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>css=h1 strong</arg>
+<arg>contains</arg>
+<arg>Ta na hora de matar a fome!</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220516 20:18:56.380" endtime="20220516 20:18:56.423"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220516 20:19:01.426" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220516 20:18:56.424" endtime="20220516 20:19:01.426"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>css=.search-link</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220516 20:19:01.426" endtime="20220516 20:19:01.462"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>css=input[formcontrolname="searchControl"]</arg>
+<arg>Cafe</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220516 20:19:01.463" level="INFO">Fills the text 'Cafe' in the given field.</msg>
+<status status="PASS" starttime="20220516 20:19:01.463" endtime="20220516 20:19:01.496"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>(//div[@class='place-info-box'])[1]</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20220516 20:19:01.514" level="INFO">Waited for Element with selector (//div[@class='place-info-box'])[1] at state visible</msg>
+<status status="PASS" starttime="20220516 20:19:01.497" endtime="20220516 20:19:01.514"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>css=.place-info-box</arg>
+<arg>contains</arg>
+<arg>STARBUGS COFFEE</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220516 20:19:01.515" endtime="20220516 20:19:02.195"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220516 20:19:07.209" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220516 20:19:02.196" endtime="20220516 20:19:07.209"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20220516 20:19:07.428" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220516 20:19:07.211" endtime="20220516 20:19:07.428"/>
+</kw>
+<status status="PASS" starttime="20220516 20:18:48.699" endtime="20220516 20:19:07.430"/>
+</test>
+<test id="s1-t3" name="Deve buscar todos os restaurantes" line="60">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20220516 20:19:07.598" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\rw5\\parodifood\\logs\\browser\\traces\\824025b2-52ef-4e13-8056-62ae11edb4c9"}</msg>
+<msg timestamp="20220516 20:19:08.704" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\rw5\\parodifood\\logs\\browser\\traces\\824025b2-52ef-4e13-8056-62ae11edb4c9"}</msg>
+<status status="PASS" starttime="20220516 20:19:07.596" endtime="20220516 20:19:08.705"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>http://parodifood.qaninja.academy/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20220516 20:19:12.307" level="INFO">Successfully initialized new page object and opened url: http://parodifood.qaninja.academy/</msg>
+<msg timestamp="20220516 20:19:12.308" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220516 20:19:08.718" endtime="20220516 20:19:12.308"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>text=Estou com fome!</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220516 20:19:12.311" endtime="20220516 20:19:12.594"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>css=h1 strong</arg>
+<arg>contains</arg>
+<arg>Ta na hora de matar a fome!</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220516 20:19:12.594" endtime="20220516 20:19:12.637"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220516 20:19:17.645" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220516 20:19:12.637" endtime="20220516 20:19:17.645"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>css=.search-link</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220516 20:19:17.646" endtime="20220516 20:19:17.685"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>css=input[formcontrolname="searchControl"]</arg>
+<arg>a</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220516 20:19:17.686" level="INFO">Fills the text 'a' in the given field.</msg>
+<status status="PASS" starttime="20220516 20:19:17.686" endtime="20220516 20:19:17.727"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>(//div[@class='place-info-box'])[1]</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20220516 20:19:17.745" level="INFO">Waited for Element with selector (//div[@class='place-info-box'])[1] at state visible</msg>
+<status status="PASS" starttime="20220516 20:19:17.728" endtime="20220516 20:19:17.745"/>
+</kw>
+<kw name="Get Element Count" library="Browser">
+<arg>css=.place-info-box</arg>
+<arg>equal</arg>
+<arg>5</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" starttime="20220516 20:19:17.745" endtime="20220516 20:19:17.757"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220516 20:19:22.775" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220516 20:19:17.758" endtime="20220516 20:19:22.775"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20220516 20:19:22.984" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220516 20:19:22.775" endtime="20220516 20:19:22.985"/>
+</kw>
+<status status="PASS" starttime="20220516 20:19:07.573" endtime="20220516 20:19:22.985"/>
+</test>
+<status status="PASS" starttime="20220516 20:18:29.786" endtime="20220516 20:19:23.172"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Busca">Busca</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="Busca">Busca</stat>
 </suite>
 </statistics>
 <errors>
