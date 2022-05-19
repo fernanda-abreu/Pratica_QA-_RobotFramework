@@ -1,5 +1,5 @@
 * Settings *
-#Library   Browser
+
 Resource        ${EXECDIR}/resources/base.robot
 Test Setup      Star Session
 Test Teardown   Take Screenshot
