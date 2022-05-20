@@ -10,21 +10,33 @@ Deve adicionar um item ao carrinho
     # ${name}     Set Variable        STARBUGS COFFEE
     #${desc}     Set Variable        Nada melhor que um café pra te ajudar a resolver um bug.
 
-    &{restaurant}       Create Dictionary       name=Starbugs Coffee        desc=Nada melhor que um café pra te ajudar a resolver um bug.
+    &{restaurant}       Create Dictionary       restaurant=Starbugs Coffee        desc=Nada melhor que um café pra te ajudar a resolver um bug.
  
-   Go To Restaurants
-   Choose Restaurant        ${restaurant}
+    Go To Restaurants
+    Choose Restaurant        ${restaurant}
+    Add To Card             Starbugs 500 error
+    Should Add to Cart      Starbugs 500 error
+    Total Cart Should Be        15,60
 
-  # Sleep        10
+   # Wait For Elements State         css=#cart tr >> text=Starbugs 500 error        visible         5
 
+    #Sleep        5
 
-* Keywords *
+Deve adicionar 3 itens ao carrinho
+    [tags]          temp
+   
+    ${cart_json}        Get JSON        cart.json
+    Go To Restaurants
+    Choose Restaurant        ${cart_json}
 
-Choose Restaurant
-    [Arguments]     ${restaurant}
+    FOR     ${product}      IN       @{cart_json["products"]}
+        Add To Card             ${product["name"]}
+        Should Add to Cart      ${product["name"]}
+    END
 
-    Click           text=${restaurant["name"]}    force=True
-    
-    Wait For Elements State     css=#detail             visible     10
-    Get Text    css=#detail         contains                ${restaurant["desc"]}
+    Total Cart Should Be         ${cart_json["total"]}
+
+   # Wait For Elements State         css=#cart tr >> text=Starbugs 500 error        visible         5
+
+    #Sleep        10
 

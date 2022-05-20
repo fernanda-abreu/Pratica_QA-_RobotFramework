@@ -10,14 +10,23 @@ ${DIV_BOX_RESTAURANTE_ALL}       (//div[@class='place-info-box'])
 Go To Restaurants
     Click           text=Estou com fome!
     Get Text        css=h1 strong   contains    Ta na hora de matar a fome!
-    Sleep           5
+    Sleep           10
 
+Choose Restaurant
+    [Arguments]     ${super_var}
+
+    Click           text=${super_var["restaurant"]}    force=True
+    
+    Wait For Elements State     css=#detail             visible     10
+    Get Text    css=#detail         contains                ${super_var["desc"]}
+
+    
 Search By
    [Arguments]     ${value}
 
     Click           css=.search-link
     Fill Text       css=input[formcontrolname="searchControl"]      ${value}     #input
-    Sleep           10                                                         #dorme por 10 segundos
+    Sleep           5                                                         #dorme por 10 segundos
 
 Restaurant Should Be Visible
     [Arguments]         ${name}
