@@ -17,7 +17,7 @@ Choose Restaurant
 
     Click           text=${super_var["restaurant"]}    force=True
     
-    Wait For Elements State     css=#detail             visible     10
+    Wait For Elements State     css=#detail             visible         ${DEFAULT_TIMEOUT}
     Get Text    css=#detail         contains                ${super_var["desc"]}
 
     
@@ -30,11 +30,11 @@ Search By
 
 Restaurant Should Be Visible
     [Arguments]         ${name}
-    Wait For Elements State     ${DIV_BOX_RESTAURANTE}     visible     10          #10 segundos que ele tem para rodar 
+    Wait For Elements State     ${DIV_BOX_RESTAURANTE}     visible     ${DEFAULT_TIMEOUT}          #10 segundos que ele tem para rodar 
     Get Text                    ${DIV_BOX_RESTAURANTE}      contains        ${name}      #output
 
 Restaurant Count Should Be
      [Arguments]         ${qtd}
     
-    Wait For Elements State     ${DIV_BOX_RESTAURANTE}     visible     10
+    Wait For Elements State     ${DIV_BOX_RESTAURANTE}     visible     ${DEFAULT_TIMEOUT}
     Get Element Count           ${DIV_BOX_RESTAURANTE_ALL}     equal       ${qtd}

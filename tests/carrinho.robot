@@ -4,7 +4,7 @@ Resource        ${EXECDIR}/resources/base.robot
 Test Setup      Star Session
 Test Teardown   Take Screenshot
 
-* Test Cases *
+* Test Case *
 Deve adicionar um item ao carrinho
 
     # ${name}     Set Variable        STARBUGS COFFEE
@@ -18,7 +18,7 @@ Deve adicionar um item ao carrinho
     Should Add to Cart      Starbugs 500 error
     Total Cart Should Be        15,60
 
-   # Wait For Elements State         css=#cart tr >> text=Starbugs 500 error        visible         5
+   # Wait For Elements State         css=#cart tr >> text=Starbugs 500 error        visible         ${DEFAULT_TIMEOUT}
 
     #Sleep        5
 
@@ -36,7 +36,7 @@ Deve adicionar 3 itens ao carrinho
 
     Total Cart Should Be         ${cart_json["total"]}
 
-   # Wait For Elements State         css=#cart tr >> text=Starbugs 500 error        visible         5
+   # Wait For Elements State         css=#cart tr >> text=Starbugs 500 error        visible         ${DEFAULT_TIMEOUT}
 
     #Sleep        10
 
